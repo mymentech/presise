@@ -44,7 +44,7 @@ $container = get_theme_mod( 'presise_container_type' );
 					foreach ( $presise_slides as $slide ):?>
                         <div class="hero-slide"
                              style="background-image: url(<?php echo esc_attr( $slide['slide_image'] ) ?>);">
-                            <div class="hero-text animated fadeInUpBig slower">
+                            <div class="hero-text animated fadeInUpBig slow">
                                 <h3 class="hero-text">
 		                            <?php echo esc_html( $slide['slide_text'] ) ?>
                                 </h3>
