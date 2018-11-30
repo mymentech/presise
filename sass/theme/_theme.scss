@@ -470,6 +470,7 @@ button.btn.btn-outline-primary {
 
 .woocommerce #respond input#submit:hover{
   background-color: lighten($primary, 10%);
+  color: #fff;
 }
 .woocommerce #respond input#submit{
   background-color: $primary;
