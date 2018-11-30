@@ -606,4 +606,9 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-white .container {
 .bg-white.navbar-dark .navbar-nav .nav-link:hover,.bg-white.navbar-dark .navbar-nav .nav-link.active{
   color: #222;
 }
-
+.woocommerce-message {
+  border-top-color: $primary;
+}
+.woocommerce-message::before {
+  color: $primary;
+}
