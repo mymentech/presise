@@ -664,5 +664,5 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-white .container {
   background-color: #000;
 }
 #comments .form-submit input#submit:hover {
-  background-color: lighten($primary, 20%);
+  background-color: darken($primary, 20%);
 }
