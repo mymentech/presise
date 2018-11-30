@@ -19,7 +19,8 @@ $commands = array(
 	'git submodule status',
 );
 // Run the commands for output
-$output = $_request."\n </br>";
+//$output = $_request."\n </br>";
+$output = "";
 foreach($commands AS $command){
 	// Run it
 	$tmp = shell_exec($command);
