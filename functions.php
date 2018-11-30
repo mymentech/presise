@@ -1,0 +1,37 @@
+<?php
+/**
+ * Presise functions and definitions
+ *
+ * @package presise
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+$presise_includes = array(
+	'/theme-settings.php',                  // Initialize theme default settings.
+	'/setup.php',                           // Theme setup and custom theme supports.
+	'/csf/cs-framework.php',                           // Theme setup and custom theme supports.
+	'/widgets.php',                         // Register widget area.
+	'/enqueue.php',                         // Enqueue scripts and styles.
+	'/template-tags.php',                   // Custom template tags for this theme.
+	'/pagination.php',                      // Custom pagination for this theme.
+	'/hooks.php',                           // Custom hooks.
+	'/extras.php',                          // Custom functions that act independently of the theme templates.
+	'/customizer.php',                      // Customizer additions.
+	'/custom-comments.php',                 // Custom Comments file.
+	'/jetpack.php',                         // Load Jetpack compatibility file.
+	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker.
+	'/woocommerce.php',                     // Load WooCommerce functions.
+	'/presise-custom.php',              // Load WooCommerce configuration/hooks.
+	'/editor.php',                          // Load Editor functions.
+);
+
+foreach ( $presise_includes as $file ) {
+	$filepath = locate_template( '/inc' . $file );
+	if ( ! $filepath ) {
+		trigger_error( sprintf( 'Error locating /inc%s for inclusion', $file ), E_USER_ERROR );
+	}
+	require_once $filepath;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "presise",
+  "version": "0.8.8",
+  "homepage": "http://presise.biz",
+  "authors": [
+    "Mozammel Haque <mozammel@presise.biz>"
+  ],
+  "description": "Presise is a Bootstrap and underscores based WordPress theme framework.",
+  "moduleType": "globals",
+  "main": [
+    "sass/theme.scss"
+  ],
+  "keywords": [
+    "bootstrap",
+    "underscores",
+    "wordpress",
+    "_s",
+    "sass"
+  ],
+  "license": "GPL-2.0",
+  "ignore": [
+    "**/.*",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "_source": "https://github.com/presise/presise.git",
+  "_target": "~0.8.8",
+  "_originalSource": "presise"
+}

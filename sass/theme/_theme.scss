@@ -1,0 +1,587 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+@font-face {
+  font-family: Calibre;
+  src: url(fonts/CalibreWeb-LightItalic.eot), url(fonts/CalibreWeb-LightItalic.woff2) format('woff2'), url(fonts/CalibreWeb-LightItalic.woff) format('woff');
+  font-weight: 300;
+  font-style: italic
+}
+
+@font-face {
+  font-family: Calibre;
+  src: url(fonts/CalibreWeb-Semibold.eot), url(fonts/CalibreWeb-Semibold.woff2) format('woff2'), url(fonts/CalibreWeb-Semibold.woff) format('woff');
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Calibre;
+  src: url(fonts/CalibreWeb-Medium.eot), url(fonts/CalibreWeb-Medium.woff2) format('woff2'), url(fonts/CalibreWeb-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Calibre;
+  src: url(fonts/CalibreWeb-Light.eot), url(fonts/CalibreWeb-Light.woff2) format('woff2'), url(fonts/CalibreWeb-Light.woff) format('woff');
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: Calibre;
+  src: url(fonts/CalibreWeb-Regular.eot), url(fonts/CalibreWeb-Regular.woff2) format('woff2'), url(fonts/CalibreWeb-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+h1, h2, h3 {
+  letter-spacing: -.04em
+}
+
+h3, h4, h6 {
+  line-height: 1.3em
+}
+
+a:hover, body, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hover {
+  color: #424242
+}
+
+.wp-caption, iframe, img, pre {
+  max-width: 100%
+}
+
+blockquote, body {
+  line-height: 30px
+}
+
+blockquote, table td, table th {
+  text-align: center
+}
+
+blockquote, h4, h5 {
+  letter-spacing: -.02em
+}
+
+.aligncenter, .clearfix:after, .presise-container:after {
+  clear: both
+}
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+  background: 0 0;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline
+}
+
+body, pre {
+  background-color: #fff
+}
+
+a img, table {
+  border: none
+}
+
+ol, pre, ul {
+  margin: 15px 0
+}
+
+article, aside, details, figcaption, figure, footer, header, nav, section {
+  display: block
+}
+
+del {
+  text-decoration: line-through
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: middle;
+  width: 100%
+}
+
+table th {
+  border: 0;
+  padding: 5px 7px
+}
+
+table td {
+  padding: 5px 10px
+}
+
+.wp-caption, img {
+  height: auto
+}
+
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table
+}
+
+.clear:after {
+  clear: both;
+  content: "";
+  display: block
+}
+
+blockquote:after, blockquote:before {
+  content: ''
+}
+
+html {
+  overflow-y: scroll !important
+}
+
+body {
+  font-family: "Calibre", sans-serif;
+  //font-family: $crimson_font;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased
+}
+
+h1 {
+  font-size: 47px;
+  line-height: 1.0625em
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 1.19em
+}
+
+h3 {
+  font-size: 27px
+}
+
+h4 {
+  font-size: 25px
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 1.5em
+}
+
+h6 {
+  font-size: 14px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $presise_font;
+  font-weight: 500;
+  color: #222;
+  margin: 25px 0;
+  text-transform: uppercase
+}
+
+blockquote {
+  font-family: $presise_font;
+  text-transform: uppercase
+}
+
+.wp-caption-text {
+  font-style: italic
+}
+
+a, p a {
+  color: #424242;
+  text-decoration: none;
+  -webkit-transition: color .3s ease-out;
+  transition: color .3s ease-out
+}
+
+p {
+  margin: 10px 0
+}
+
+input[type=submit] {
+  -webkit-appearance: none
+}
+
+ol, ul {
+  list-style-position: inside
+}
+
+ol ol, ol ul, ul ol, ul ul {
+  margin: 0;
+  padding: 0 0 0 15px
+}
+
+pre {
+  padding: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word
+}
+
+dt {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700
+}
+
+dd {
+  margin-bottom: 15px
+}
+
+sub, sup {
+  position: relative;
+  vertical-align: baseline;
+  height: 0;
+  line-height: 0;
+  font-size: 75%
+}
+
+sub {
+  top: .5ex
+}
+
+sup {
+  bottom: .5ex
+}
+
+.wp-caption-text {
+  margin: 0
+}
+
+table tbody tr, table thead tr {
+  border: 1px solid #e1e1e1
+}
+
+table tbody th {
+  border-right: 1px solid #e1e1e1
+}
+
+.navbar-dark .navbar-nav, .widget_categories .cat-item {
+  font-family: $presise_font;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.color-white {
+  color: #fff
+}
+
+.bg-white {
+  background-color: #fff
+}
+
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible
+}
+
+.navbar {
+  padding: unset
+}
+
+.widget ul.product-categories .cat-item:hover {
+  color: #909090
+}
+
+#right-sidebar .widget ul li {
+  font-size: 13px;
+  font-weight: 500
+}
+
+#right-sidebar .widget ul li:hover, #right-sidebar .widget ul li:hover a {
+  color: #909090
+}
+
+#right-sidebar .widget .tagcloud a {
+  color: #fff;
+  float: left;
+  font-family: $presise_font;
+  font-size: 13px !important;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0 2px 2px 0;
+  padding: 5px 19px;
+  text-transform: uppercase;
+  background-color: #ffaea1;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-family: $presise_font;
+  text-transform: uppercase;
+  font-size: 40px
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block
+}
+
+.nav-link {
+  padding: 1rem 1rem
+}
+
+.dropdown-menu {
+  background-color: #222;
+  margin-top: -1px
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #222;
+  border: 1px dashed #424242;
+  -webkit-transition: left .2s ease-in-out;
+  transition: left .2s ease-in-out
+}
+
+.woocommerce .woocommerce-breadcrumb {
+  font-family: $crimson_font;
+  font-style: italic;
+  color: #ffaea1
+}
+
+.summary.entry-summary .price * {
+  line-height: inherit;
+  text-transform: uppercase;
+  font-family: $presise_font;
+  font-weight: 500;
+  font-size: 14px;
+  color: #222;
+  text-decoration: none
+}
+
+.presise-quantity-buttons.quantity {
+  margin: 0 2px 0 0;
+  float: left;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid transparent;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.presise-quantity-buttons.quantity input.qty {
+  position: relative;
+  height: 54px;
+  width: 44px;
+  padding: 0;
+  margin: 0 29px 0 0;
+  line-height: 53px;
+  outline: 0;
+  font-family: $presise_font;
+  font-size: 20px;
+  font-weight: 400
+}
+
+button.btn.btn-outline-primary {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  height: 56px;
+  margin: 0;
+  font-family: $presise_font;
+  font-size: 13px;
+  line-height: 2em;
+  letter-spacing: .05em;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+  color: #fff;
+  background-color: #222;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 3;
+  padding: 14px 41px;
+  border-radius: 0
+}
+
+.presise-quantity-buttons .presise-quantity-minus, .presise-quantity-buttons .presise-quantity-plus {
+  position: absolute;
+  right: 0;
+  width: 27px;
+  height: 27px;
+  line-height: 25px;
+  font-size: 11px;
+  cursor: pointer;
+  -webkit-transition: color .15s ease-in-out;
+  transition: color .15s ease-in-out
+}
+
+.presise-quantity-buttons .presise-quantity-minus {
+  bottom: 50%
+}
+
+.presise-quantity-buttons .presise-quantity-plus {
+  top: 50%
+}
+
+.presise-quantity-buttons .presise-quantity-minus:after {
+  content: "\f077";
+  font: normal normal normal 14px/1 FontAwesome
+}
+
+.presise-quantity-buttons .presise-quantity-plus:after {
+  content: "\f078";
+  font: normal normal normal 14px/1 FontAwesome
+}
+
+.woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+  width: 120px;
+  height: 56px
+}
+
+.presise_title_wrap {
+  position: relative
+}
+
+.presise_title_wrap .price * {
+  line-height: inherit;
+  text-transform: uppercase;
+  font-family: $presise_font;
+  font-weight: 500;
+  font-size: 14px;
+  color: #222;
+  text-decoration: none
+}
+
+.presise_title_wrap h2.presise_product_loop_title {
+  margin: 0 0 1px;
+  color: #222;
+  font-weight: 500;
+  font-size: 20px
+}
+
+.add-to-cart-container.presise_add_to_cart_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  background: #222;
+  padding: 23px 45px
+}
+
+.add-to-cart-container.presise_add_to_cart_link {
+  a.add_to_cart_button, a.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    border: none;
+    background: #222;
+    font-family: $presise_font;
+    text-transform: uppercase;
+    text-align: center
+  }
+}
+
+.presise_title_wrap:hover .presise_add_to_cart_link {
+  display: block
+}
+
+.woocommerce ul.products li.product a img {
+  margin: 0
+}
+
+.woocommerce span.onsale {
+  background-color: $wc_onsale_bg;
+  font-family: $presise_font;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.woocommerce ul.products li .presise_product_thumb_image {
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+
+  span.onsale {
+    position: absolute;
+    display: block;
+    top: 5px;
+    right: 5px;
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-size: 13px;
+    line-height: 63px;
+    font-family: $presise_font;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 100;
+    box-sizing: border-box;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    background-color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+  }
+
+}
+
+/**
+Slick Slider / Presise Slider
+ */
+
+.presise-slider-wrapper {
+  position: relative;
+  .presise-slider {
+    .hero-slide.slick-slide {
+      width: auto;
+      height: 100vh;
+      background-size: cover;
+      background-attachment: fixed !important;
+      background-position: center;
+    }
+    .hero-text {
+      position: absolute;
+      top: 20%;
+      bottom: 0;
+      width: 85%;
+      left: 50px;
+    }
+    h3.hero-text {
+      color: #fff;
+      font-family: "Calibre", sans-serif;
+      text-transform: unset;
+      font-size: 70px;
+      line-height: 1.11;
+      font-weight: 300;
+    }
+  }
+}
+
+nav.navbar.navbar-expand-md.navbar-dark.bg-transparent {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+nav.navbar.navbar-expand-md.navbar-dark img {
+  max-height: 100px;
+  width: auto;
+}
