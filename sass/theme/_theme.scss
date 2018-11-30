@@ -666,3 +666,17 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-white .container {
 #comments .form-submit input#submit:hover {
   background-color: lighten($primary, 5%);
 }
+.presise_meta_item span {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: $presise_font;
+  font-weight: 600;
+}
+.presise_meta_item span span.sku, .presise_meta_item span a {
+  //font-family: "Calibre",sans-serif;
+  font-family: $crimson_font;
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+}
