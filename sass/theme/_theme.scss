@@ -270,8 +270,6 @@ table tbody th {
   background-color: #fff;
 }
 
-
-
 .dropdown-menu li:hover .sub-menu {
   visibility: visible
 }
@@ -464,7 +462,10 @@ button.btn.btn-outline-primary {
   margin: 0 0 1px;
   color: #222;
   font-weight: 500;
-  font-size: 20px
+  font-size: 0.9em;
+}
+#review_form .stars a {
+  color: gold;
 }
 
 .add-to-cart-container.presise_add_to_cart_link {
@@ -474,7 +475,25 @@ button.btn.btn-outline-primary {
   width: 100%;
   display: none;
   background: #222;
-  padding: 23px 45px
+  padding: 23px 45px;
+  .btn-outline-primary{
+    color: #fff;
+    border: none;
+    background: #222;
+    font-family: $presise_font;
+    text-transform: uppercase;
+    text-align: center
+  }
+
+
+  a.added_to_cart.wc-forward {
+    color: #aaa;
+    border: 1px solid #ddd;
+    padding: 1px 6px;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+  }
 }
 
 .add-to-cart-container.presise_add_to_cart_link {
@@ -587,10 +606,11 @@ nav.navbar.navbar-expand-md.navbar-dark img {
   max-height: 100px;
   width: auto;
 }
-.footer-bg{
+
+.footer-bg {
   background-color: $primary;
   color: #fff;
-  a{
+  a {
     color: #ddd
   }
 }
@@ -603,12 +623,30 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-white .container {
   color: #707070;
   transition: color .3s;
 }
-.bg-white.navbar-dark .navbar-nav .nav-link:hover,.bg-white.navbar-dark .navbar-nav .nav-link.active{
+
+.bg-white.navbar-dark .navbar-nav .nav-link:hover, .bg-white.navbar-dark .navbar-nav .nav-link.active {
   color: #222;
 }
+
 .woocommerce-message {
   border-top-color: $primary;
 }
+
 .woocommerce-message::before {
   color: $primary;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background-color: $primary;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+  color: #000;
+  a {
+    color: #000;
+  }
 }
