@@ -468,6 +468,10 @@ button.btn.btn-outline-primary {
   color: gold;
 }
 
+input#submit{
+  background-color: $primary;
+}
+
 .add-to-cart-container.presise_add_to_cart_link {
   position: absolute;
   top: 0;
