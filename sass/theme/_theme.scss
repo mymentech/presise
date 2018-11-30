@@ -468,8 +468,12 @@ button.btn.btn-outline-primary {
   color: gold;
 }
 
+.woocommerce #respond input#submit:hover{
+  background-color: lighten($primary, 10%);
+}
 .woocommerce #respond input#submit{
   background-color: $primary;
+  color: #fff;
 }
 
 .add-to-cart-container.presise_add_to_cart_link {
