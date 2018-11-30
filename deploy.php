@@ -7,17 +7,19 @@
  *		https://gist.github.com/1809044
  */
 // The commands
+$_request = print_r($_REQUEST, true);
 $commands = array(
 	'echo $PWD',
 	'whoami',
 	'git pull',
 	'git status',
+	'git log',
 	'git submodule sync',
 	'git submodule update',
 	'git submodule status',
 );
 // Run the commands for output
-$output = '';
+$output = $_request."\n </br>";
 foreach($commands AS $command){
 	// Run it
 	$tmp = shell_exec($command);
