@@ -587,4 +587,8 @@ nav.navbar.navbar-expand-md.navbar-dark img {
 }
 .footer-bg{
   background-color: $primary;
+  color: #fff;
+  a{
+    color: #ddd
+  }
 }
