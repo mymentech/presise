@@ -44,7 +44,7 @@ $container = get_theme_mod( 'presise_container_type' );
 					foreach ( $presise_slides as $slide ):?>
                         <div class="hero-slide"
                              style="background-image: url(<?php echo esc_attr( $slide['slide_image'] ) ?>);">
-                            <div class="hero-text animated fadeInUp slower">
+                            <div class="hero-text animated fadeInUpBig slower">
                                 <h3 class="hero-text">
 		                            <?php echo esc_html( $slide['slide_text'] ) ?>
                                 </h3>
@@ -109,7 +109,7 @@ $container = get_theme_mod( 'presise_container_type' );
 		<?php else: ?>
 
         <a class="skip-link sr-only sr-only-focusable"
-           href="#content"><?php esc_html_e( 'Skip to content', 'presise' ); ?></a>
+           href="#"><?php esc_html_e( 'Skip to content', 'presise' ); ?></a>
         <nav class="navbar navbar-expand-md navbar-dark bg-primary">
 
 			<?php if ( 'container' == $container ) : ?>
