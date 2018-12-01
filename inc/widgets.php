@@ -64,6 +64,15 @@ if ( ! function_exists( 'presise_widgets_init' ) ) {
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
 		) );
+		register_sidebar( array(
+			'name'          => __( 'Shop Sidebar', 'presise' ),
+			'id'            => 'shop-sidebar',
+			'description'   => __( 'Shop sidebar widget area', 'presise' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		) );
 
 		register_sidebar( array(
 			'name'          => __( 'Left Sidebar', 'presise' ),
