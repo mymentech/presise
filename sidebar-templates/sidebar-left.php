@@ -9,7 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! is_active_sidebar( 'left-sidebar' ) ) {
+if ( is_shop() && ! is_active_sidebar( 'shop-sidebar' ) ) {
+	return;
+}elseif( ! is_active_sidebar( 'left-sidebar' ) ) {
 	return;
 }
 
@@ -22,6 +24,12 @@ $sidebar_pos = get_theme_mod( 'presise_sidebar_position' );
 	<?php else : ?>
 <div class="col-md-4 widget-area" id="left-sidebar" role="complementary">
 	<?php endif; ?>
-<?php dynamic_sidebar( 'left-sidebar' ); ?>
+	<?php
+	if ( is_shop() ) {
+		dynamic_sidebar( 'shop-sidebar' );
+	} else {
+		dynamic_sidebar( 'left-sidebar' );
+	}
+	?>
 
 </div><!-- #left-sidebar -->

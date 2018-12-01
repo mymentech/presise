@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( is_shop() && ! is_active_sidebar( 'shop-sidebar' ) ) {
 	return;
-} elseif( ! is_active_sidebar( 'right-sidebar' ) ) {
+}elseif( ! is_active_sidebar( 'right-sidebar' ) ) {
 	return;
 }
 
